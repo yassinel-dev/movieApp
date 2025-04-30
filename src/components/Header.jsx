@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { RiMenu5Fill } from "react-icons/ri";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,27 +20,14 @@ export default function Header() {
             <NavLink
               to="/"
               className="text-gray-400 hover:text-blue-500 transition duration-300 transform hover:scale-105"
-              activeClassName="text-blue-500 font-semibold"
-              exact
             >
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Home
-              </motion.div>
+              Home
             </NavLink>
             <NavLink
               to="/favorite"
               className="text-gray-400 hover:text-blue-500 transition duration-300 transform hover:scale-105"
-              activeClassName="text-blue-500 font-semibold"
             >
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Favorite
-              </motion.div>
+              Favorite
             </NavLink>
           </ul>
         </nav>
